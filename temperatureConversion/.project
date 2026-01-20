@@ -14,11 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/temperatureConversion/TemperatureConversion.java</name>
-			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/eclipse-workspace/temperatureConversion/src/temperatureConversion/TemperatureConversion.java</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>
