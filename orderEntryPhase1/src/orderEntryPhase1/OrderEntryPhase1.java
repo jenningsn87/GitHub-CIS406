@@ -101,7 +101,7 @@ public class OrderEntryPhase1 {
 	public String toString() {
 		return("\nOrder Details:\n" + 
 				"\nItem Number \tItem Description \tItem Price \tQuantity \tTotal Tax \tDiscount \tNet Cost\n" +
-				"  " + itemNumber + "\t   " + itemDescription + "\t" + "\t  $" + itemPrice + "\t" + "\t  " + quantity + "\t\t  $" + tax + "\t  $" + discount + "\t\t$" + netAmount );
+				"  " + itemNumber + "\t\t   " + itemDescription + "\t" + "\t  $" + itemPrice + "\t" + "\t  " + quantity + "\t\t  $" + tax + "\t\t  $" + discount + "\t\t$" + netAmount );
 	}
 
 	public static void main(String[] args) {

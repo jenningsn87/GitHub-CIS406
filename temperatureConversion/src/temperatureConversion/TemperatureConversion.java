@@ -8,11 +8,8 @@ import java.util.InputMismatchException;
 
 public class TemperatureConversion {
 	
-	private static int degreeF;
-	private static int convertToC = ((degreeF - 32) * 5 / 9);
-	private static int degreeC;
-	private static int convertToF = (degreeC * 9 / 5) + 32;
-
+static double degreeF;
+static double degreeC;
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
@@ -21,9 +18,12 @@ public class TemperatureConversion {
 		System.out.println("");
 		
 		
+		//request fahrenheit input
 		System.out.print("Enter degrees in Fahrenheit: ");
+		//try catch for errors
 		try {
 		degreeF = input.nextInt();
+		
 		}
 		catch (InputMismatchException e) {
 			System.out.println("Data entered does not match input request. Program Ending.");
@@ -31,14 +31,17 @@ public class TemperatureConversion {
 		catch (Exception e) {
 			System.out.println("Error Occurred. Contact System Administration.");
 		}
-		
-		
-		
+		//convert to celsius and print out
+		double convertToC = (degreeF - 32) * 5.0/9;		
 		System.out.println("Degrees in Celsius: " + convertToC);
+		
 		
 		System.out.println("");		
 	
+		
+		//request celsius input
 		System.out.print("Enter degrees in Celsius: ");
+		//try catch for errors
 		try {
 			degreeC = input.nextInt();
 			}
@@ -49,16 +52,15 @@ public class TemperatureConversion {
 				System.out.println("Error Occurred. Contact System Administration.");
 			}
 		
-		
-		
-		
+		//convert to fahrenheit and print out
+		double convertToF = (degreeC * 9.0/5) + 32;		
 		System.out.println("Degrees in Fahrenheit: " + convertToF);
 		
 		System.out.println("");
 		
-		System.out.print("Thanks for checking! See ya!");
+		System.out.print("\n Thanks for checking! See ya!");
 		
-		
+		//close scanner
 		input.close();
 	}
 
